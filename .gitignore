@@ -1,0 +1,74 @@
+#https://github.com/github/gitignore/tree/master/Global
+
+*~ 
+# KDE directory preferences
+.directory
+
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.iml
+.project
+
+npm-debug.log
+node_modules
+.nodemonignore
+/web/styles/css/
+/mock-server/uploads/
+
+coverage
+/web/jshint/
+/dist
+/.temp
+
+/.bower-tmp
+.bower-cache
+.bower-registry
+.bower-tmp
+
+.DS_Store
+.idea
+.settings
+.vagrant
+.svn/
+Vagrantfile
+
+target
+target-grunt
+
+
+#eclipse===============
+*.pydevproject
+.metadata
+.gradle
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
+.loadpath
+# External tool builders
+.externalToolBuilders/
+# Locally stored "Eclipse launch configurations"
+*.launch
+# CDT-specific
+.cproject
+# PDT-specific
+.buildpath
+# sbteclipse plugin
+.target
+# TeXlipse plugin
+.texlipse
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
