@@ -1,0 +1,117 @@
+.whereareyou {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+}
+
+.leftSpace {
+	margin-left: 100px;
+	float: left;
+}
+
+.bigImg {
+	width: 521px;
+	/*width: 40%;*/
+}
+
+.smallImg {
+	width: 120px; 
+	/*width: 10%; */
+	float: left; 
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.rightspace {
+	float: left;
+	width: 52%;
+	font-family: Tahoma;
+	position: relative;
+	z-index: 1;
+	margin-right: 100px;
+}
+
+.rightspace h1 {
+	font-size: 16px;
+	color: #393939;
+}
+
+.liItem {
+	border: 0px solid #ddd;
+	background-color: rgba(255, 255, 255, 0);
+	padding: 7px 0 3px 0px;
+}
+
+.contentOfItem {
+	padding: 20px 0 0px 0px;
+	margin-left: 15px;
+}
+
+.addDashedLine {
+	border-bottom: 1px dashed #d2d2d2;	
+
+}
+
+.addDottedLine {
+	border-bottom-color: rgb(220, 220, 220);
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	padding-bottom: 12px;
+}
+
+.buyShoes {
+	background-color: #F3F4F6;
+	min-height: 260px;
+}
+
+.buyShoesItem1 {
+	margin-left: 15px;
+	padding-top: 18px;
+}
+
+.liFormat {
+	list-style-type: none;
+	cursor: pointer;
+	float: left;
+	/*border: 1px solid #ccc;*/
+	border: 1px dashed #ccc;
+	text-align: center;
+	padding: 4px 6px;
+	background: #fff;
+	color: #333;
+	margin-right: 15px;
+	margin-left: 6px;
+}
+
+.mouseOverIt {
+	border-color: red;
+}
+
+.mouseOutIt {
+	border: 1px dashed #ccc;
+}
+
+.mouseClickIt {
+	/*border-color: red;*/
+	border: 1px solid red;
+	color: red;
+}
+
+.addNum {
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+.inputWidth {
+	width: 40px;
+	text-align: center;
+}
+
+.buttonStyle {
+	margin-top: 36px;
+	margin-left: 105px;
+}
+
+.buttonStyle img {
+	cursor: pointer;
+}

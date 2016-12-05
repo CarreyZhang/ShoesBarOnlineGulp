@@ -1,0 +1,129 @@
+<script type="text/javascript">
+	$('.carousel').carousel({
+	  interval: 2000
+	})
+
+
+
+</script>
+
+<div>
+
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" style="margin-bottom: 0px;">
+       <!-- 轮播（Carousel）指标 -->
+       <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" 
+             class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+       </ol>   
+       <!-- 轮播（Carousel）项目 -->
+       <div class="carousel-inner">
+          <div class="item active">
+             <img src="img/shoe4.jpg" alt="First slide">
+          </div>
+          <div class="item">
+             <img src="img/shoe5.jpg" alt="Second slide">
+          </div>
+          <div class="item">
+             <img src="img/shoe6.jpg" alt="Third slide">
+          </div>
+       </div>
+       <!-- 轮播（Carousel）导航 -->
+<!--        <a class="carousel-control left" href="#myCarousel" 
+          data-slide="prev">&lsaquo;</a>
+       <a class="carousel-control right" href="#myCarousel" 
+          data-slide="next">&rsaquo;</a> -->
+    </div> 
+<!-- /*    <script>
+       $(function(){
+          $('#myCarousel').on('slide.bs.carousel', function () {
+             alert("当调用 slide 实例方法时立即触发该事件。");
+          });
+       });
+    </script>*/ -->
+
+    <!-- carousel  end -->
+
+    <!-- 青年男鞋馆 -->
+    <div class="page-header" style="margin-top: 5px; padding-left: 0px; border-bottom: 3px solid #6E5285; margin-left: 100px; margin-right: 100px;">
+        <a href="" style="float: left;">
+          <h4>
+           青年男鞋馆
+          </h4>
+        </a>
+
+        <ol class="breadcrumb" style="padding-left: 75%; background-color: white; margin-bottom: 0px;">
+          <li><a href="#">商务正装</a></li>
+          <li><a href="#">商务休闲</a></li>
+          <li><a href="#">夏款新品</a></li>
+          <li class="active"><a href="#">更多</a></li>
+        </ol>
+    </div>
+
+
+    <div class="row" style="margin-left: 85px; margin-right: 85px;" ng-controller="MaleShoeslist">
+       <div class="col-sm-6 col-md-3" ng-repeat="maleshoe in maleshoes">
+          <div class="thumbnail">
+             <a href="#/shoesDetail/{{maleshoe.id}}/{{maleBar}}" class="thumb">
+               <img ng-src="{{maleshoe.imageUrl}}" alt="通用的占位符缩略图">
+             </a>
+          </div>
+          <div class="caption">
+             <h3>{{maleshoe.label}}</h3>
+             <p>{{maleshoe.snippet}}</p>
+             <p>
+                <a href="#" class="btn btn-primary" role="button">
+                   立即购买
+                </a> 
+                <a href="#" class="btn btn-default" role="button">
+                   加入购物车
+                </a>
+             </p>
+          </div>
+       </div>
+  
+    </div>
+
+
+    <!-- 青年女鞋馆 -->
+    <div class="page-header" style="margin-top: 15px; padding-left: 0px; border-bottom: 3px solid #6E5285; margin-left: 100px; margin-right: 100px;">
+        <a href="" style="float: left;">
+          <h4>
+           青年女鞋馆
+          </h4>
+        </a>
+
+        <ol class="breadcrumb" style="padding-left: 75%; background-color: white; margin-bottom: 0px;">
+          <li><a href="#">商务正装</a></li>
+          <li><a href="#">商务休闲</a></li>
+          <li><a href="#">夏款新品</a></li>
+          <li class="active"><a href="#">更多</a></li>
+        </ol>
+    </div>  
+
+
+    <div class="row" style="margin-left: 85px; margin-right: 85px;" ng-controller="FemaleShoeslist">
+       <div class="col-sm-6 col-md-3" ng-repeat="femaleshoe in femaleshoes">
+          <div class="thumbnail">
+             <img ng-src="{{femaleshoe.imageUrl}}" 
+             alt="通用的占位符缩略图">
+          </div>
+          <div class="caption">
+             <h3>{{femaleshoe.label}}</h3>
+             <p>{{femaleshoe.snippet}}</p>
+             <p>
+                <a href="#" class="btn btn-primary" role="button">
+                   立即购买
+                </a> 
+                <a href="#" class="btn btn-default" role="button">
+                   加入购物车
+                </a>
+             </p>
+          </div>
+       </div>
+    </div>
+
+</div>

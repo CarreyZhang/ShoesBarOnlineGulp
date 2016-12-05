@@ -1,0 +1,40 @@
+/*
+灰色小字体
+*/
+.smallFont {
+	color: rgb(153, 153, 153);
+	font-size: 12px;
+}
+
+/*
+被删除的价格字样
+*/
+.deleteFont {
+	color: rgb(83, 83, 83);
+	font-size: 12px;
+}
+
+/*
+突出显示个别字样
+*/
+.obviousFont {
+	color: rgb(93, 137, 202);
+	font-size: 12px;
+}
+
+/*
+突出显示商品价格字样
+*/
+.highlightPrice {
+	color: rgb(204, 0, 0);
+	font-size: 28px;
+	font-weight: bold;
+}
+
+/*
+积分字样提示
+*/
+.scoreAboutShoe {
+	color: rgb(57, 155, 16);
+	font-size: 12px;
+}

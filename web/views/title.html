@@ -1,0 +1,50 @@
+<!--trigger the dropdown event -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+
+<div class="pagetitle" ng-controller="PageTitle">
+
+	<ul class="breadcrumb newbreadcrumb">
+
+    	<li>
+    		周三鞋城官网！ 0557-6541600
+    	</li>
+    	<li class="newli">
+		    <a href="#/login">
+	        请登录
+		</a>
+    	</li>
+    	<li class="newli">
+		    <a href="#/register" class="person-font-color">
+        	快速注册
+		</a>
+    	</li>
+
+	    <!-- <li><a href="#">个人中心</a> <span class="divider"></span></li> -->
+	    <li class="dropdown newli spacefortitle" id="accountmenu">
+	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">个人中心<b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	            <li><a href="#">我的订单</a></li>
+	            <li><a href="#">我的收藏</a></li>          
+	            <li><a href="#">我的优惠券</a></li>
+	            <li class="divider"></li>
+				<li><a href="#">我的其他</a></li>
+	        </ul>
+        </li>
+    
+		<li class="icon-volume-up">
+		  	<a href="#">
+	  			<i class="glyphicon glyphicon-volume-up"></i>
+	  			<!-- <span class="glyphicon glyphicon-volume-up"></span> -->
+				公告（0）
+			</a> 
+			<span class="divider"></span>
+		</li>
+		<li><a href="#">移动app下载</a> <span class="divider"></span></li>
+	</ul>
+
+</div>
+

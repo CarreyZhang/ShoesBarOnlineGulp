@@ -1,0 +1,59 @@
+[
+    {
+	    "sex": "female",
+        "id": "num1", 
+        "imageUrl": "img/13.jpg", 
+        "name": "sexy num1", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    }, 
+	{
+	    "sex": "female",
+        "id": "num2", 
+        "imageUrl": "img/14.jpg", 
+        "name": "sexy num2", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    },
+    {
+	    "sex": "female",
+        "id": "num3", 
+        "imageUrl": "img/15.jpg", 
+        "name": "sexy num3", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    },
+    {
+	    "sex": "female",
+        "id": "num4", 
+        "imageUrl": "img/16.jpg", 
+        "name": "sexy num4", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    },
+    {
+	    "sex": "female",
+        "id": "num5", 
+        "imageUrl": "img/17.jpg", 
+        "name": "sexy num5", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    },
+    {
+	    "sex": "female",
+        "id": "num6", 
+        "imageUrl": "img/18.jpg", 
+        "name": "sexy num6", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    },
+    {
+	    "sex": "female",
+        "id": "num7", 
+        "imageUrl": "img/19.jpg", 
+        "name": "sexy num7", 
+		"label": "爆新款",
+        "snippet": "这是一款很舒服，很牛叉的鞋子，你值得拥有！"
+    }	
+
+]

@@ -1,0 +1,31 @@
+.pagetitle {
+	padding-left: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-weight: 500;
+	background-color: rgb(243, 243, 243);
+}
+
+.person-font-color {
+	color: red;
+}
+
+.newbreadcrumb {
+	margin-left: 15px;
+	margin-top: 0px;
+	padding: 0px 0px;
+	margin-bottom: 0px;
+	list-style: none;
+	background-color: rgb(243, 243, 243);
+	border-radius: 0px;
+}
+
+.newbreadcrumb .newli:before {
+	content: "  ";
+}
+
+.spacefortitle {
+	margin-left: 550px;
+}
+

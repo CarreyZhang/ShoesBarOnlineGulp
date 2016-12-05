@@ -1,0 +1,72 @@
+<!--trigger the dropdown event -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+
+</script>
+
+<div>
+	
+	<div class="pageheader">
+		<!--left logo -->
+		<img class="logo" src="img/orglogo.jpg">
+		<!-- <span>BEAUTIFUL SHOES BAR</span> -->
+	
+		<!--middle search -->
+    	<!-- <input class="search" type="text" data-provide="typeahead" autocomplete="off"> -->
+    	<!-- <input class="search" type="text" autocomplete="off" value="请输入搜索关键词"> -->
+    	<input class="search" type="text" placeholder="请输入搜索关键词" />
+    		<!-- <span class="glyphicon glyphicon-search"></span> -->
+    		<button class="search-button">搜索</button>
+
+    	<!--right shopping cart and collect pic -->
+    	<a href="#" class="collect-pic">
+    		<img src="img/collectPic.jpg">
+    	</a>
+    	<a href="#" class="shopping-cart">
+    		<img src="img/shoppingCartPic.jpg">
+    	</a>
+    	
+	</div>
+
+	<!--navigation bar -->
+	<nav class="navbar navbar-inverse" role="navigation">
+<!-- 	   <div class="navbar-header">
+	      <a class="navbar-brand active" href="#">首页</a>
+	   </div> -->
+	   <div>
+	        <ul class="nav navbar-nav">
+	    		<li class="active">
+	    			<a href="#">首页
+	    			</a>
+    			</li>
+		        <li>
+		        	<a href="#">新品发布
+		        	</a>
+	        	</li>
+		        <li>
+		        	<a href="#">优惠活动
+		        	</a>
+	        	</li>
+		        <li class="dropdown">
+			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			               商品分类 <b class="caret"></b>
+			        </a>
+		        <ul class="dropdown-menu">
+			        <li>
+			        	<a href="">青年男鞋馆
+			        	</a>
+		        	</li>
+			        <li>
+			        	<a href="">青年女鞋馆
+			        	</a>
+		        	</li>
+		        </ul>
+		        </li>
+	        </ul>
+	   </div>
+	</nav>
+
+	
+</div>

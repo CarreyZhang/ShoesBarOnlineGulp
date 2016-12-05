@@ -1,0 +1,47 @@
+.pageheader {
+	padding-left: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.logo {
+	width: 315px;
+	height: 48px;
+}
+
+.search {
+	margin-left: 150px;
+	height: 35px;
+	width: 300px;
+	/*color: rgb(219, 219, 231);*/
+}
+
+.search-button {
+	margin-left: 0px;
+	width: 60px;
+	height: 37px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.collect-pic img{
+	/*padding-left: 150px;*/
+	margin-left: 150px;
+}
+
+.shopping-cart img{
+	/*padding-left: 20px;*/
+	margin-left: 20px;
+}
+
+.navbar-inverse {
+	/*background-color: #635E5E;*/
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.navbar {
+	border-radius: 0px;
+}

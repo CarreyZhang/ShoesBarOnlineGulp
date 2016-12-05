@@ -1,0 +1,156 @@
+<div>
+   <!--鞋子详细信息界面 -->
+   <div>
+   		<pagetitle></pagetitle>
+   </div>
+
+   <div>
+   		<pageheader></pageheader>
+   </div>
+
+   <div ng-controller="ShoesDetailCtrl">
+
+      <div>
+
+         <div class="whereareyou">
+            您现在的位置：
+            <span><a href="#/mainPage" >官网首页</a></span>
+            >
+            <span><a href="#" >{{dataWhereComeFrom}}</a></span>
+            >
+            <span>{{shoeDetailInfo.name}}</span>
+         </div>
+
+         <div>
+
+            <div class="leftSpace">
+               <div>
+                  <img ng-src="{{mainImageUrl}}" class="bigImg" >           
+               </div>
+               <div ng-repeat="img in shoeSmallImages">
+                  <img ng-src="{{img}}" class="smallImg" ng-click="setBigImg($index)">
+               </div>
+            </div>
+
+            <div class="rightspace">
+               <ul class="list-group">
+                  <li class="list-group-item liItem addDashedLine">               
+                     <h1>{{shoeDetailInfo.name}}
+                     <span class="label label-danger">包邮</span>
+                     </h1>
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont">                  
+                     <span>
+                        吊牌价：
+                     </span>
+                     <del class="deleteFont">{{shoesDetailInfo.tagprice}}元</del>
+                     <span>（4折，可节省400元）</span>
+                     <span class="deployRight obviousFont">商品货号：12345678</span>
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont">
+                     <span>
+                        商城价：
+                     </span>   
+                     <img src="img/moneylogo.png" style="padding-bottom:11px;">                 
+                     <span class="highlightPrice">
+                        {{shoesDetailInfo.shopprice}}
+                     </span> 
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont addDottedLine">                  
+                     <span>
+                        立  送：
+                     </span>
+                     <span class="scoreAboutShoe">
+                       279
+                     </span>
+                     <span>
+                        个周三鞋店商城积分 ,积分可兑换积分商品~
+                     </span>
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont">
+                     <span>
+                        评  论：
+                     </span>
+                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                     <span>
+                        已有
+                     </span>
+                     <span class="scoreAboutShoe">
+                       79
+                     </span>
+                     <span>
+                        人评价
+                     </span>                     
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont">
+                     <span>
+                        总销量：
+                     </span>
+                     <span class="scoreAboutShoe">
+                       7955
+                     </span>
+                     <span>
+                        件
+                     </span>                     
+                  </li>
+                  <li class="list-group-item liItem contentOfItem smallFont">                  
+                     <span>
+                        运  费：
+                     </span>
+                     <span>
+                        EMS全国包邮 ( 香港、澳门、台湾、钓鱼岛除外 )
+                     </span>
+                  </li>
+
+               </ul>  
+
+               <div class="buyShoes">
+                   <div class="buyShoesItem1">
+                      <span>可选颜色：&nbsp;&nbsp;&nbsp;</span>
+                      <div ng-repeat="shoecolor in shoeColors" class="showOneLine">
+                        <span>{{shoecolor.tempColor}}</span>
+                        <input type="checkbox" ng-model="shoecolor.shooseOrNot" ng-click="chooseShoeColor($index)">
+                         &nbsp;&nbsp;&nbsp;
+                      </div>
+                   </div>
+                   <div class="buyShoesItem1">
+                      <span class="leftStyle">尺码选择：&nbsp;&nbsp;&nbsp;</span>
+                      <ul ng-repeat="tempSize in tempSizes" class="showOneLine">
+                          <li ng-class="{mouseOverIt: tempSize.overOrNot, mouseOutIt: tempSize.overOutOrNot, mouseClickIt: tempSize.clickItOrNot}" class="liFormat" ng-click="chooseShoeSize($index)" ng-mouseover="overIt($index)" ng-mouseleave="leaveIt($index)">{{tempSize.size}}</li>
+                      </ul>                                    
+                   </div>
+                   <div class="addNum">
+                      <span>购买数量：&nbsp;&nbsp;&nbsp;</span>
+                      <button type="button" ng-click="reduceNum()">-</button>
+                      <input type="text" class="inputWidth" ng-model="buyShoeNum" ng-change="notNum()">
+                      <!-- <input type="number" name="number" class="inputWidth" ng-model="buyShoeNum" ng-change="notNum()"> -->
+                      <button type="button" ng-click="addNum()">+</button>
+                      <span ng-show="showSizeAndRepertory">&nbsp;&nbsp;&nbsp; {{shoeShowSize}}码；库存：{{showRepertory}}双</span>
+                   </div>
+                   <div class="buttonStyle">
+                      <img ng-src="img/buynow.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <img ng-src="img/addshopcar.png">
+                   </div>
+               </div>
+
+
+            </div>
+
+
+
+         </div>
+        
+      </div>
+
+   </div>
+
+   <div class="clearAboveFloatStyle">
+         <pagetailer></pagetailer>
+   </div>
+
+</div>
+
