@@ -14,7 +14,8 @@ var folderHierarchy = {
     dist: './dist',
     lib: './web/js/libs',
     data: './web/data',
-    temp: './.temp'
+    temp: './.temp',
+    mock: './mock-server'
 };
 
 gulp.task('lib', function(cb) {
@@ -85,6 +86,34 @@ gulp.task('package', ['copy', 'lib'], function() {
 
 });
 
+gulp.task('serve:mock', function() {
+    var nodemon = require('gulp-nodemon');
+    //using mock server, you can config the banckend server in node-app/config/local.properties file
+    nodemon({
+        script: folderHierarchy.mock + '/app.js',
+        delay: '1s',
+        //only watch files in the node-app with extension: .js, .properties, .json
+        watch: [folderHierarchy.mock],
+        ext: 'js properties json',
+        //output the details
+        verbose: true
+    })
+    .on('restart', function() {
+        console.log('mock server restarted');
+    })
+});
+
+function startServer() {
+    var exec = require('child_process').exec;
+    var mock = exec('gulp serve:mock', [], {
+        cwd: '.'
+    });
+
+    mock.stdout.on('data', gutil.log);
+    mock.stderr.on('data', gutil.log);
+    mock.on('close', gutil.log);
+};
+
 gulp.task('default', ['clean'], function() {
     console.log('here we go!.............');
     gulp.start('main');
@@ -97,4 +126,9 @@ gulp.task('dev', function() {
 gulp.task('pack', ['clean'], function() {
     console.log('package now,  here we go!.............');
     gulp.start('main');
+});
+
+gulp.task('startServer', ['serve:mock'], function() {
+    console.log('start server, here we go..........');
+    startServer();
 });
